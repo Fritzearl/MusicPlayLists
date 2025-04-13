@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search-bar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        max-width: 600px;
+        padding: 15px 40px 15px 50px; /* Add padding for the icon */
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        font-size: 16px;
+        background-color: #282828; /* Dark background for the input */
+        color: #ffffff; /* White text color */
+    }
+
+    .search-bar input::placeholder {
+        color: #b3b3b3; /* Light gray placeholder text */
+    }
+
+    .search-bar .search-icon {
+        position: absolute;
+        left: 15px; /* Position the icon */
+        top: 50%;
+        transform: translateY(-50%);
+        color: #b3b3b3; /* Light gray icon color */
+    }
+
+    .search-bar button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        background-color: #1db954;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .search-results {
+        margin-top: 20px;
+    }
+
+    .result-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #333;
+        transition: background-color 0.3s;
+        justify-content: space-between; /* Space between image/info and play button */
+    }
+
+    .result-item:hover {
+        background-color: #282828;
+    }
+
+    .result-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    .result-item .info {
+        flex-grow: 1;
+    }
+
+    .result-item .info h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .result-item .info p {
+        margin: 0;
+        font-size: 14px;
+        color: #b3b3b3;
+    }
+
+    .play-button {
+        background-color: #1db954;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="9f0d197e-0eb2-459e-9a3c-69c7b901a16a-removebg-preview.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="Search.html">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="Library.html">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="CreatePlaylist.html">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="Favorites.html">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>Search for Music</h1>
+    <div class="search-bar">
+        <i class="fa fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Search for songs, artists, or albums..." aria-label="Search">
+        <button type="button" id="searchButton">Search</button>
+    </div>
+    <div class="search-results" id="searchResults">
+        <!-- Search results will be displayed here -->
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+</body>
+</html>

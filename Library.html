@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css">
+</head>
+   <style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .library-section {
+        margin-top: 20px;
+    }
+
+    .library-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .library-item {
+        background-color: #282828;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .library-item:hover {
+        transform: scale(1.05);
+    }
+
+    .library-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .library-item h3 {
+        margin: 10px 0 5px;
+        font-size: 16px;
+    }
+
+    .library-item p {
+        margin: 0;
+        font-size: 14px;
+        color: #b3b3b3;
+    }
+  </style>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="9f0d197e-0eb2-459e-9a3c-69c7b901a16a-removebg-preview.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="Search.html">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="Library.html">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="CreatePlaylist.html">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="Favorites.html">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>Your Library</h1>
+    <div class="library-section">
+      <div class="library-title">Playlists</div>
+      <div class="grid">
+        <div class="library-item">
+          <img src="487928975_2072831149895761_8233657900957489392_n.jpg" alt="Playlist Cover">
+          <h3>Playlist 1</h3>
+          <p>10 Songs</p>
+        </div>
+        <div class="library-item">
+          <img src="488038172_1784547948794437_7192349585351568986_n.jpg" alt="Playlist Cover">
+          <h3>Playlist 2</h3>
+          <p>15 Songs</p>
+        </div>
+        <div class="library-item">
+          <img src="488303863_1693034257969498_8363770530428607746_n.jpg" alt="Playlist Cover">
+          <h3>Playlist 3</h3>
+          <p>8 Songs</p>
+        </div>
+        <div class="library-item">
+          <img src="488602984_997352525782799_5610096019436850988_n.jpg" alt="Playlist Cover">
+          <h3>Playlist 4</h3>
+          <p>12 Songs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="library-section">
+      <div class="library-title">Albums</div>
+      <div class="grid">
+        <div class="library-item">
+          <img src="lips.png" alt="Album Cover">
+          <h3>Album 1</h3>
+          <p>Artist 1</p>
+        </div>
+        <div class="library-item">
+          <img src="dalangin.jpg" alt="Album Cover">
+          <h3>Album 2</h3>
+          <p>Artist 2</p>
+        </div>
+        <div class="library-item">
+          <img src="bruno.jpg" alt="Album Cover">
+          <h3>Album 3</h3>
+          <p>Artist 3</p>
+        </div>
+        <div class="library-item">
+          <img src="GGD_Iris.jpg" alt="Album Cover">
+          <h3>Album 4</h3>
+          <p>Artist 4</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="library-section">
+      <div class="library-title">Artists</div>
+      <div class="grid">
+        <div class="library-item">
+          <img src="rainbow.jpg" alt="Artist">
+          <h3>South Borders</h3>
+          <p>OLD SONGS</p>
+        </div>
+        <div class="library-item">
+          <img src="backstreet.jpg" alt="Artist">
+          <h3>backstreet Boys</h3>
+          <p>NEW SONG</p>
+        </div>
+
+  <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+</body>
+</html>
